@@ -1,0 +1,91 @@
+<h2 class="heading">Tax Deductions</h2>
+<table>
+  <tr>
+    <td>Tax Table</td>
+    <td>
+      <%= calc.tt.NAME %>
+    </td>
+  </tr>
+  <tr>
+    <td>Province</td>
+    <td>
+      <%= calc.province %>
+    </td>
+  </tr>
+  <tr>
+    <td>Pay Periods</td>
+    <td>
+      <%= "%.0f" % calc.P %>
+    </td>
+  </tr>
+  <tr>
+    <td>Federal Tax Credit</td>
+    <td>
+      <%= "%.2f" % calc.TC %>
+    </td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td class="heading">Income</td>
+    <td class="right">
+      <%= "%.2f" % calc.I %>
+    </td>
+  </tr>
+  <tr class="heading">
+    <td colspan="2">Deductions</td>
+  </tr>
+  <tr>
+    <td class="indent">Federal Tax</td>
+    <td class="right">
+      <%= "%.2f" % calc.t %>
+    </td>
+  </tr>
+  <tr>
+    <td class="indent">EI</td>
+    <td class="right">
+      <%= "%.2f" % calc.ei %>
+    </td>
+  </tr>
+  <tr>
+    <td class="indent">QC EI</td>
+    <td class="right">
+      <%= "%.2f" % calc.qc_ei %>
+    </td>
+  </tr>
+  <tr>
+    <td class="indent">CPP</td>
+    <td class="right">
+      <%= "%.2f" % calc.c %>
+    </td>
+  </tr>
+  <tr>
+    <td class="indent">RRSP</td>
+    <td class="right">
+      <%= "%.2f" % calc.F %>
+    </td>
+  </tr>
+  <tr>
+    <td class="indent">Union</td>
+    <td class="right">
+      <%= "%.2f" % calc.U1 %>
+    </td>
+  </tr>
+  <tr>
+    <td class="indent">Alimony</td>
+    <td class="right">
+      <%= "%.2f" % calc.F2 %>
+    </td>
+  </tr>
+  <tr>
+    <td class="heading">Total Deductions</td>
+    <td class="right">
+      <%= "%.2f" % calc.total_deductions %>
+    </td>
+  </tr>
+  <tr>
+    <td class="heading">Net</td>
+    <td class="right">
+      <%= "%.2f" % calc.net %>
+    </td>
+  </tr>
+</table>

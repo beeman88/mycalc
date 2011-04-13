@@ -1,0 +1,127 @@
+<h2 class="heading">Basic Payroll Calculator</h2>
+
+<form method="post" action="/">
+  <table>
+    <tr>
+      <td>Tax Table</td>
+      <td>
+            <select name ="TaxTable">
+              <option value="201101" selected="selected">2011 Jan</option>
+              <option value="201007">2010 Jul</option>
+            </select>
+      </td>
+    </tr>
+    <tr class="heading">
+      <td colspan="2">Payroll Data</td>
+    </tr>
+    <tr>
+      <td class="indent">Province</td>
+      <td>
+            <select name ="province">
+              <option value="BC" selected="selected">BC</option>
+              <option value="AB">AB</option>
+              <option value="SK">SK</option>
+              <option value="MN">MN</option>
+              <option value="ON">ON</option>
+              <option value="QC">QC</option>
+              <option value="NB">NB</option>
+              <option value="NS">NS</option>
+              <option value="PE">PE</option>
+              <option value="NL">NL</option>
+              <option value="YK">YK</option>
+              <option value="NT">NT</option>
+              <option value="NU">NU</option>
+              <option value="OS">OS</option>
+            </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="indent">Pay Periods</td>
+      <td>
+            <select name ="P">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="4">4</option>
+              <option value="10">10</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="22">22</option>
+              <option value="24" selected="selected">24</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="52">52</option>
+              <option value="53">53</option>
+              <option value="240">240</option>
+            </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="indent">Income</td>
+      <td><input type="input" name ="I" value="1000" size="10"/></td>
+    </tr>
+    <tr>
+      <td class="indent">Federal Tax Credit</td>
+      <td><input type="input" name ="TC" value="10527" size="10"/></td>
+    </tr>
+    <tr  class="heading">
+      <td colspan="2">Employee Deductions</td>
+    </tr>
+    <tr>
+      <td class="indent">RRSP</td>
+      <td><input type="input" name ="F" value="100" size="10"/></td>
+    </tr>
+    <tr>
+      <td class="indent">Union</td>
+      <td><input type="input" name ="U1" value="0" size="10"/></td>
+    </tr>
+    <tr>
+      <td class="indent">Alimony</td>
+      <td><input type="input" name ="F2" value="0" size="10"/></td>
+    </tr>
+    <tr  class="heading">
+      <td colspan="2">Taxable Income Deductions</td>
+    </tr>
+    <tr>
+      <td class="indent">Child Support</td>
+      <td><input type="input" name ="F1" value="0" size="10"/></td>
+    </tr>
+    <tr>
+      <td class="indent">Living Zone</td>
+      <td><input type="input" name ="HD" value="0" size="10"/></td>
+    </tr>
+    <tr  class="heading">
+      <td colspan="2">Federal Taxes</td>
+    </tr>
+    <tr>
+      <td class="indent">Addition Tax Deduction</td>
+      <td><input type="input" name ="L" value="0" size="10"/></td>
+    </tr>
+    <tr>
+      <td class="indent">Labour Fed Tax Credit</td>
+      <td><input type="input" name ="FED_LAB_TC" value="0" size="10"/></td>
+    </tr>
+    <tr>
+      <td class="indent">Medical Expenses</td>
+      <td><input type="input" name ="K3" value="0" size="10"/></td>
+    </tr>
+    <tr  class="heading">
+      <td colspan="2">Other Information</td>
+    </tr>
+    <tr>
+      <td class="indent">CPP YTD</td>
+      <td><input type="input" name ="D" value="0" size="10"/></td>
+    </tr>
+    <tr>
+      <td class="indent">EI YTD</td>
+      <td><input type="input" name ="D1" value="0" size="10"/></td>
+    </tr>
+    <tr>
+      <td class="indent">QPIP YTD</td>
+      <td><input type="input" name ="QPIP_TYD" value="0" size="10"/></td>
+    </tr>
+    <tr>
+      <td><input type="submit"/></td>
+      <td></td>
+    </tr>
+  </table>
+</form>
