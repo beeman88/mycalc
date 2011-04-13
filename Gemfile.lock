@@ -1,0 +1,21 @@
+GIT
+  remote: git@github.com:beeman88/Mygem.git
+  revision: b76ecffb98e7f80f49eb44b625b88e6e57d0cf80
+  specs:
+    calculatorgem (0.0.1)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    rack (1.2.2)
+    sinatra (1.2.2)
+      rack (~> 1.1)
+      tilt (< 2.0, >= 1.2.2)
+    tilt (1.2.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  calculatorgem!
+  sinatra
