@@ -9,6 +9,7 @@ end
 post '/' do
   calc = CalculatorGem::Calculator.new(params['TaxTable'])
   calc.province = params['province']
+  #TODO change hardcoded birthday
   calc.birthday = Time.utc(1970,07,23).to_date
   calc.P = params['P'].to_f
   calc.I = params['I'].to_f
