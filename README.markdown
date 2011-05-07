@@ -26,7 +26,7 @@ To upgrade to the application's ruby to 1.9.2, run the command below (see full i
       * bamboo-ree-1.8.7
         bamboo-mri-1.9.2 (prepared, will migrate on next git push)
 
-Now git push a change and git heroic push.
+Now git push a change and git heroku push.
 
     $ git push
 
